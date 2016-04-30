@@ -2,6 +2,9 @@
 <html>
 <head>
 	<title>Crystal Game!</title>
+	
+	<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
@@ -32,11 +35,28 @@
 	
 	
 	<div id='images'>
-		<img src="assets/images/crystal1a.jpg" class="auth-image" alt="crystal1">
-		<img src="assets/images/crystal2.jpg" class="auth-image" alt="crystal2">
-		<img src="assets/images/crystal3.jpg" class="auth-image" alt="crystal3">
-		<img src="assets/images/crystal4.jpg" class="auth-image" alt="crystal4">
+		<img id='purple' src="assets/images/crystal1a.jpg" class="auth-image" alt="crystal1">
+		<img id='yellow'src="assets/images/crystal2.jpg" class="auth-image" alt="crystal2">
+		<img id='green'src="assets/images/crystal3.jpg" class="auth-image" alt="crystal3">
+		<img id='red'src="assets/images/crystal4.jpg" class="auth-image" alt="crystal4">
 	</div>
+<script type="text/javascript">
+
+$(document).ready(function(){
+	
+var randomNumber = Math.floor(Math.random() * 100) + 1; 
+
+$('#block1').html(randomNumber);
+
+
+})
+var purpleCrystal = Math.floor(Math.random() * 100) + 1; 
+var yellowCrystal = Math.floor(Math.random() * 100) + 1;
+var greenCrystal = Math.floor(Math.random() * 100) + 1;
+var redCrystal = Math.floor(Math.random() * 100) + 1;
+
+
+</script> =
 	
 
 
